@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="js/codemirror/lib/codemirror.css">
+    </head>
+    <body>
+        <textarea name="editor" id="editor" style="width:100%;height:100%"></textarea>
+        <script src="js/codemirror/lib/codemirror.js"></script>
+        <script src="js/vim.js"></script>
+        <script>
+            var textarea = document.getElementById('editor');
+            var editor = CodeMirror.fromTextArea(textarea, {
+                vimMode: true
+            });
+        </script>
+    </body>
+</html>
+
+
